@@ -11,7 +11,7 @@ public class Esercizio1 {
  }
  }
  public static Boolean  annoBisestile (int anno) {
- if  (anno % 4 ==0 || (anno % 100 == 0) && (anno  % 400 == 0 )) {
+ if  (anno % 4 ==0 || ((anno % 100 == 0) && (anno  % 400 == 0 ))) {
      return true;
 
  } else {
@@ -28,7 +28,8 @@ public class Esercizio1 {
         System.out.println( "il numero di caratteri è pari? " + risultato); */
 
         System.out.println( "Inserisci l'anno" );
-        int anno = Integer.parseInt(scanner.nextLine());    boolean risultato = annoBisestile(anno);
+        int anno = Integer.parseInt(scanner.nextLine());
+        boolean risultato = annoBisestile(anno);
         System.out.println( "L'anno è bisesto? " + risultato);
 
     }
